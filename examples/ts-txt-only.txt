@@ -1,0 +1,72 @@
+Class: Asteroid
+  Property: sides : number
+  Property: living : any
+  Property: angularVelocity : any
+  Property: cachedGraphics : p5.Graphics
+  Method: draw() : any
+  Method: destroyed() : any
+  Method: prerender() : any
+  Method: polygon(x : number, y : number, radius : number, npoints : number, cg : p5.Graphics) : any
+
+Class: AsteroidsGame
+  Property: playerShip : PlayerShip
+  Property: asteroids : Array<Asteroid>
+  Property: enemies : Array<Enemy>
+  Property: p5instance : p5
+  Property: ui : UI
+  Property: gameStarted : any
+  Method: draw() : any
+
+Class: Bullet
+  Property: lifetime : number
+  Method: checkCollision(rect : Rectangle) : boolean
+  Method: draw() : any
+
+Class: Button
+  Property: buttonClickHandler : Function
+  Method: checkCollision(rect : Rectangle) : any
+  Method: draw() : any
+
+Class: Enemy
+  Property: p5instance : p5
+  Property: player : PlayerShip
+  Property: x : number
+  Property: y : number
+  Property: speed : number
+  Property: size : number
+  Method: draw() : any
+  Method: update() : any
+  Method: checkCollision(rect : Rectangle) : boolean
+
+Class: PlayerShip
+  Property: thrustAmount : any
+  Property: rotationAmount : any
+  Property: bullets : Array<Bullet>
+  Property: living : any
+  Property: lives : any
+  Property: score : any
+  Method: thrust(amount : number) : any
+  Method: shootBullet() : any
+  Method: destroyed() : any
+  Method: setupKeyHandlers() : any
+  Method: update() : any
+  Method: draw() : any
+
+Class: Rectangle
+  Property: width : number
+  Property: height : number
+  Property: xVelocity : number
+  Property: yVelocity : number
+  Property: headingAngle : number
+  Method: thrust(amountN : number) : any
+  Method: turn(direction : number) : any
+  Method: checkCollision(rect : Rectangle) : any
+  Method: update() : any
+  Method: draw() : any
+
+Class: UI
+  Property: buttons : Array<Rectangle>
+  Property: startGamePressed : any
+  Method: drawMenu() : any
+  Method: drawScore() : any
+

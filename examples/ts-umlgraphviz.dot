@@ -1,0 +1,22 @@
+digraph G {
+  "ImageStorageService";
+  "AppModule";
+  "AppComponent";
+  "AppRoutingModule";
+  "ApiService";
+  "VideoPlayerComponent";
+  "PreviewComponent";
+  "Buffer";
+  "IPv4";
+  "IPv6";
+  "image-storage.service.spec";
+  "main";
+  "app.module";
+  "app.component";
+  "image-storage.service.spec" -> "ImageStorageService";
+  "main" -> "AppModule";
+  "app.module" -> "AppComponent";
+  "app.component" -> "ApiService";
+  "app.module" -> "VideoPlayerComponent";
+  "app.module" -> "PreviewComponent";
+}
