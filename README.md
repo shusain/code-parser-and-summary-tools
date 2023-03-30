@@ -1,4 +1,4 @@
-# CPAST - Code Parser and Summary Tools
+# C👀PAST - Code Parser and Summary Tools
 
 This repo contains a few scripts to parse and summarize TS code (primarily to then use as prompt input for LLMs):
 
