@@ -1,6 +1,3 @@
-GITHUB_TOKEN=your_github_token ./gradlew run --args='https://github.com/user/repository'
-
-
 # Java Code Analyzer
 
 Java Code Analyzer is a command-line application that generates a Markdown summary of Java classes, methods, and properties in a GitHub repository.
