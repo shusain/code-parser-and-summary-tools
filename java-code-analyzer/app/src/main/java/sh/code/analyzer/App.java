@@ -110,17 +110,17 @@ public class App {
                     FieldDeclaration field = (FieldDeclaration) member;
                     for (VariableDeclarator variable : field.getVariables()) {
                         markdown.append("  - ").append(variable.getTypeAsString())
-                                .append(" ").append(variable.getNameAsString()).append("\n");
+                                .append(" ").append(variable.getNameAsString()).append("  \n");
                     }
                 } else if (member instanceof MethodDeclaration) {
                     MethodDeclaration method = (MethodDeclaration) member;
     
                     // Add annotations for methods
                     for (AnnotationExpr annotation : method.getAnnotations()) {
-                        markdown.append("  ").append(annotation.toString()).append("\n");
+                        markdown.append("  ").append(annotation.toString()).append("  \n");
                     }
     
-                    markdown.append("  + ").append(method.getDeclarationAsString(false, true, true)).append("\n");
+                    markdown.append("  + ").append(method.getDeclarationAsString(false, true, true)).append("  \n");
                 }
             }
         }
