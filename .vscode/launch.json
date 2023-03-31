@@ -5,6 +5,15 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "cwd": "${workspaceFolder}/java-code-analyzer/app",
+            "type": "java",
+            "name": "JavaGithubSummarizer",
+            "request": "launch",
+            "mainClass": "sh.code.analyzer.App",
+            "projectName": "app",
+            "args": ["shusain/DungeonGame", "debug-out.md"]
+        },
+        {
             "name": "ts-node",
             "type": "node",
             "request": "launch",
