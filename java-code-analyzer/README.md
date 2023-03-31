@@ -53,6 +53,9 @@ Alternative if you'd like can supply the GH token as a third arg and will use th
 This command will generate a Markdown summary of the Java code in the specified repository and write it to the output.md file.
 
 ### Example Output
+
+[See full example output](./app/dungeon-game.md)
+
 ---
 package DungeonGame
 
