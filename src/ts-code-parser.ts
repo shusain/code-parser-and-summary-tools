@@ -126,7 +126,7 @@ const generateUML = (srcPath: string, outputFilePath: string) => {
 
 
 const srcPath = process.argv[2];
-const outputFilePath = './output.dot';
+const outputFilePath = './dist/output.dot';
 
 if (!srcPath) {
     console.error('Source directory path is missing. Usage: node uml-generator.js <src-path>');
